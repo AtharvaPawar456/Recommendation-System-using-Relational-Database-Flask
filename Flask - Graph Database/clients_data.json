@@ -1,0 +1,111 @@
+[
+    {
+        "id": "1",
+        "name": "Alice",
+        "age": 25,
+        "city": "New York",
+        "friend_of": ["2", "3"],
+        "purchases_list": [
+            {"item": "dj system", "qty": 1, "id": 1},
+            {"item": "iphone 12", "qty": 2, "id": 2}
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Bob",
+        "age": 30,
+        "city": "San Francisco",
+        "friend_of": ["1", "3"],
+        "purchases_list": [
+            {"item": "i ball mouse", "qty": 1, "id": 3},
+            {"item": "cs e-book", "qty": 1, "id": 4}
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Charlie",
+        "age": 28,
+        "city": "Los Angeles",
+        "friend_of": ["1", "2"],
+        "purchases_list": [
+            {"item": "acer 5i gen11 laptop", "qty": 1, "id": 5},
+            {"item": "chat-gpt subscription", "qty": 3, "id": 6}
+        ]
+    },
+    {
+        "id": "4",
+        "name": "David",
+        "age": 27,
+        "city": "Chicago",
+        "friend_of": ["5"],
+        "purchases_list": [
+            {"item": "dj system", "qty": 1, "id": 1},
+            {"item": "iphone 12", "qty": 1, "id": 2},
+            {"item": "cs e-book", "qty": 2, "id": 4}
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Eva",
+        "age": 26,
+        "city": "Boston",
+        "friend_of": ["4"],
+        "purchases_list": [
+            {"item": "i ball mouse", "qty": 2, "id": 3},
+            {"item": "chat-gpt subscription", "qty": 1, "id": 6}
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Frank",
+        "age": 32,
+        "city": "Seattle",
+        "friend_of": [],
+        "purchases_list": [
+            {"item": "acer 5i gen11 laptop", "qty": 1, "id": 5},
+            {"item": "i ball mouse", "qty": 1, "id": 3}
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Grace",
+        "age": 29,
+        "city": "Austin",
+        "friend_of": [],
+        "purchases_list": [
+            {"item": "iphone 12", "qty": 3, "id": 2},
+            {"item": "cs e-book", "qty": 1, "id": 4}
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Helen",
+        "age": 31,
+        "city": "Denver",
+        "friend_of": ["9"],
+        "purchases_list": [
+            {"item": "acer 5i gen11 laptop", "qty": 2, "id": 5},
+            {"item": "cs e-book", "qty": 1, "id": 4}
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Ivan",
+        "age": 33,
+        "city": "Portland",
+        "friend_of": ["8"],
+        "purchases_list": [
+            {"item": "chat-gpt subscription", "qty": 1, "id": 6}
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Jack",
+        "age": 24,
+        "city": "Miami",
+        "friend_of": [],
+        "purchases_list": [
+            {"item": "i ball mouse", "qty": 3, "id": 3}
+        ]
+    }
+]

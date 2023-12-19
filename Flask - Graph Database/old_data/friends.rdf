@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://example.org/friends/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://example.org/friends/1">
+    <rdf:type rdf:resource="http://example.org/friends/Person"/>
+    <ns1:name>Alice</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</ns1:age>
+    <ns1:city>New York</ns1:city>
+    <ns1:friendOf rdf:resource="http://example.org/friends/2"/>
+    <ns1:friendOf rdf:resource="http://example.org/friends/3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/friends/2">
+    <rdf:type rdf:resource="http://example.org/friends/Person"/>
+    <ns1:name>Bob</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</ns1:age>
+    <ns1:city>San Francisco</ns1:city>
+    <ns1:friendOf rdf:resource="http://example.org/friends/1"/>
+    <ns1:friendOf rdf:resource="http://example.org/friends/3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/friends/4">
+    <rdf:type rdf:resource="http://example.org/friends/Person"/>
+    <ns1:name>David</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</ns1:age>
+    <ns1:city>Chicago</ns1:city>
+    <ns1:friendOf rdf:resource="http://example.org/friends/5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/friends/7">
+    <rdf:type rdf:resource="http://example.org/friends/Person"/>
+    <ns1:name>Grace</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</ns1:age>
+    <ns1:city>Austin</ns1:city>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/friends/5">
+    <rdf:type rdf:resource="http://example.org/friends/Person"/>
+    <ns1:name>Eva</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</ns1:age>
+    <ns1:city>Boston</ns1:city>
+    <ns1:friendOf rdf:resource="http://example.org/friends/4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/friends/10">
+    <rdf:type rdf:resource="http://example.org/friends/Person"/>
+    <ns1:name>Jack</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</ns1:age>
+    <ns1:city>Miami</ns1:city>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/friends/3">
+    <rdf:type rdf:resource="http://example.org/friends/Person"/>
+    <ns1:name>Charlie</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</ns1:age>
+    <ns1:city>Los Angeles</ns1:city>
+    <ns1:friendOf rdf:resource="http://example.org/friends/1"/>
+    <ns1:friendOf rdf:resource="http://example.org/friends/2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/friends/8">
+    <rdf:type rdf:resource="http://example.org/friends/Person"/>
+    <ns1:name>Helen</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</ns1:age>
+    <ns1:city>Denver</ns1:city>
+    <ns1:friendOf rdf:resource="http://example.org/friends/9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/friends/6">
+    <rdf:type rdf:resource="http://example.org/friends/Person"/>
+    <ns1:name>Frank</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ns1:age>
+    <ns1:city>Seattle</ns1:city>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/friends/9">
+    <rdf:type rdf:resource="http://example.org/friends/Person"/>
+    <ns1:name>Ivan</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</ns1:age>
+    <ns1:city>Portland</ns1:city>
+    <ns1:friendOf rdf:resource="http://example.org/friends/8"/>
+  </rdf:Description>
+</rdf:RDF>

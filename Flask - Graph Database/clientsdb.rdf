@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://recomend.org/products/"
+   xmlns:ns2="http://recomend.org/people/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://recomend.org/people/2">
+    <rdf:type rdf:resource="http://recomend.org/people/Person"/>
+    <ns2:name>Bob</ns2:name>
+    <ns2:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</ns2:age>
+    <ns2:city>San Francisco</ns2:city>
+    <ns2:friendOf rdf:resource="http://recomend.org/people/1"/>
+    <ns2:friendOf rdf:resource="http://recomend.org/people/3"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/i_ball_mouse"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/cs_e-book"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/people/5">
+    <rdf:type rdf:resource="http://recomend.org/people/Person"/>
+    <ns2:name>Eva</ns2:name>
+    <ns2:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</ns2:age>
+    <ns2:city>Boston</ns2:city>
+    <ns2:friendOf rdf:resource="http://recomend.org/people/4"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/i_ball_mouse"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/chat-gpt_subscription"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/products/cs_e-book">
+    <rdf:type rdf:resource="http://recomend.org/products/Product"/>
+    <rdfs:label>cs e-book</rdfs:label>
+    <ns1:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:quantity>
+    <ns1:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns1:quantity>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/people/4">
+    <rdf:type rdf:resource="http://recomend.org/people/Person"/>
+    <ns2:name>David</ns2:name>
+    <ns2:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</ns2:age>
+    <ns2:city>Chicago</ns2:city>
+    <ns2:friendOf rdf:resource="http://recomend.org/people/5"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/dj_system"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/iphone_12"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/cs_e-book"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/products/acer_5i_gen11_laptop">
+    <rdf:type rdf:resource="http://recomend.org/products/Product"/>
+    <rdfs:label>acer 5i gen11 laptop</rdfs:label>
+    <ns1:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:quantity>
+    <ns1:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns1:quantity>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/people/3">
+    <rdf:type rdf:resource="http://recomend.org/people/Person"/>
+    <ns2:name>Charlie</ns2:name>
+    <ns2:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</ns2:age>
+    <ns2:city>Los Angeles</ns2:city>
+    <ns2:friendOf rdf:resource="http://recomend.org/people/1"/>
+    <ns2:friendOf rdf:resource="http://recomend.org/people/2"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/acer_5i_gen11_laptop"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/chat-gpt_subscription"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/people/8">
+    <rdf:type rdf:resource="http://recomend.org/people/Person"/>
+    <ns2:name>Helen</ns2:name>
+    <ns2:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</ns2:age>
+    <ns2:city>Denver</ns2:city>
+    <ns2:friendOf rdf:resource="http://recomend.org/people/9"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/acer_5i_gen11_laptop"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/cs_e-book"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/people/6">
+    <rdf:type rdf:resource="http://recomend.org/people/Person"/>
+    <ns2:name>Frank</ns2:name>
+    <ns2:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ns2:age>
+    <ns2:city>Seattle</ns2:city>
+    <ns1:purchased rdf:resource="http://recomend.org/products/acer_5i_gen11_laptop"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/i_ball_mouse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/products/dj_system">
+    <rdf:type rdf:resource="http://recomend.org/products/Product"/>
+    <rdfs:label>dj system</rdfs:label>
+    <ns1:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:quantity>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/people/1">
+    <rdf:type rdf:resource="http://recomend.org/people/Person"/>
+    <ns2:name>Alice</ns2:name>
+    <ns2:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</ns2:age>
+    <ns2:city>New York</ns2:city>
+    <ns2:friendOf rdf:resource="http://recomend.org/people/2"/>
+    <ns2:friendOf rdf:resource="http://recomend.org/people/3"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/dj_system"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/iphone_12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/products/chat-gpt_subscription">
+    <rdf:type rdf:resource="http://recomend.org/products/Product"/>
+    <rdfs:label>chat-gpt subscription</rdfs:label>
+    <ns1:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ns1:quantity>
+    <ns1:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:quantity>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/products/iphone_12">
+    <rdf:type rdf:resource="http://recomend.org/products/Product"/>
+    <rdfs:label>iphone 12</rdfs:label>
+    <ns1:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns1:quantity>
+    <ns1:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:quantity>
+    <ns1:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ns1:quantity>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/people/7">
+    <rdf:type rdf:resource="http://recomend.org/people/Person"/>
+    <ns2:name>Grace</ns2:name>
+    <ns2:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</ns2:age>
+    <ns2:city>Austin</ns2:city>
+    <ns1:purchased rdf:resource="http://recomend.org/products/iphone_12"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/cs_e-book"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/people/10">
+    <rdf:type rdf:resource="http://recomend.org/people/Person"/>
+    <ns2:name>Jack</ns2:name>
+    <ns2:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</ns2:age>
+    <ns2:city>Miami</ns2:city>
+    <ns1:purchased rdf:resource="http://recomend.org/products/i_ball_mouse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/products/i_ball_mouse">
+    <rdf:type rdf:resource="http://recomend.org/products/Product"/>
+    <rdfs:label>i ball mouse</rdfs:label>
+    <ns1:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:quantity>
+    <ns1:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns1:quantity>
+    <ns1:quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ns1:quantity>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://recomend.org/people/9">
+    <rdf:type rdf:resource="http://recomend.org/people/Person"/>
+    <ns2:name>Ivan</ns2:name>
+    <ns2:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</ns2:age>
+    <ns2:city>Portland</ns2:city>
+    <ns2:friendOf rdf:resource="http://recomend.org/people/8"/>
+    <ns1:purchased rdf:resource="http://recomend.org/products/chat-gpt_subscription"/>
+  </rdf:Description>
+</rdf:RDF>

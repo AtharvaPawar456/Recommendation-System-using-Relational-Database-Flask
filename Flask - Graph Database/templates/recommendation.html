@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Recommendation System - {{ username }}</title>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded shadow-md">
+        <h2 class="text-2xl font-bold mb-4">Recommendation for {{ username }}</h2>
+        <p class="mb-4">User Information:</p>
+        <ul class="grid grid-cols-2 my-2 gap-2">
+            <li><strong>ID:</strong> {{ user_data.id }}</li>
+            <li><strong>Name:</strong> {{ user_data.name }}</li>
+            <li><strong>Age:</strong> {{ user_data.age }}</li>
+            <li><strong>City:</strong> {{ user_data.city }}</li>
+        </ul>
+        <p class="mt-4 mb-2"><b>{{ user_data.name }} Last Purchases:</b></p>
+        <ul>
+            {% for purchase in user_data.purchases_list %}
+            <li>{{ purchase}} (QTY : {{ purchase.qty }})</li>
+            {% endfor %}
+            <div class="grid grid-cols-2 mt-2 gap-2">
+                {% for purchase in user_data.purchases_list %}
+                        <div class="p-2 border rounded-xl font-mono">{{purchase.item}} . {{ purchase.qty }}</div>
+                {% endfor %}
+            </div>
+        </ul>
+        
+        <!-- Friend Data -->
+        <p class="mt-4 mb-2 text-center"><b>--x-- Friends --x--</b></p>
+        <ul>
+            {% for friend_data in user_data.friend_of %}
+                <li>--- {{ friend_data.friend_id }} : {{ friend_data.friend_name }} -> {{ friend_data.purchase_list}}</li>
+            {% endfor %}
+        </ul>
+
+        <p class="mt-4 "><b>Recommendation:</b>
+            
+            <div class="grid grid-cols-2 mt-2 gap-2">
+                {% for rec_item in recommendation %}
+                        <div class="p-2 border rounded-xl font-mono">{{rec_item.id}} . {{ rec_item.item }}</div>
+                {% endfor %}
+            </div>
+        </p>
+    </div>
+</body>
+</html>
