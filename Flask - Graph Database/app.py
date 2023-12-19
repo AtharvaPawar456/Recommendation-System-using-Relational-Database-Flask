@@ -49,32 +49,9 @@ def get_user_data(username):
             item_quantity = clients_db.value(purchased_o, product_ns.quantity)
             user_data["purchases_list"].append({"item": str(item_name), "qty": item_quantity})
 
-    
-
     return user_data
 
 
-'''
-[
-    ['i_ball_mouse', 'cs_e-book'],
-    ['acer_5i_gen11_laptop', 'chat-gpt_subscription'],
-]
-
-user_friend_item_list :  
-
-[{'friend_name': 'Bob', 'friend_id': '2', 'purchase_list': ['cs_e-book', 'i_ball_mouse']}, {'friend_name': 'Charlie', 'friend_id': '3', 'purchase_list': ['acer_5i_gen11_laptop', 'chat-gpt_subscription']}]
-
-recommended_item :  ['purchase_list', 'friend_id', 'friend_name', 'purchase_list', 'friend_id', 'friend_name']
-
-user_friend_item_list :  ['i_ball_mouse', 'cs_e-book']
-recommended_item :  ['e', 's', 'u', 'o', 'm', '_', 'l', 'l', 'a', 'b', '_', 'i', 'k', 'o', 'o', 'b', '-', 'e', '_', 's', 'c']
-
-reversed_list = mylist[::-1]
-
-['cs_e-book', 'i_ball_mouse']
-user_friend_item_list :  ['chat-gpt_subscription', 'acer_5i_gen11_laptop']
-
-'''
 
 def get_recommendation(username, user_data):
     recommended_item = []
@@ -100,7 +77,7 @@ def get_recommendation(username, user_data):
         {"item": item, "id": next((item_data["id"] for item_data in item_list if item_data["item"] == item), None)}
         for item in unique_recommended_item
     ]
-    print("JSON List:", json_list)
+    # print("JSON List:", json_list)
     return json_list
 
 
