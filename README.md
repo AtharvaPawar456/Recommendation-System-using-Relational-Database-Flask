@@ -2,6 +2,15 @@
 
 This project implements a recommendation system using a relational graph database and Flask. The data is stored in a graph database, and recommendations are provided based on user interactions.
 
+
+![image](https://github.com/AtharvaPawar456/Recommendation-System-using-Relational-Database-Flask/blob/main/Flask%20-%20Graph%20Database/research/graph_images/alice_graph.png)
+
+![image](https://github.com/AtharvaPawar456/Recommendation-System-using-Relational-Database-Flask/blob/main/Output%20Images/img-output-1.png)
+
+![image](https://github.com/AtharvaPawar456/Recommendation-System-using-Relational-Database-Flask/blob/main/Output%20Images/img-output-2.png)
+
+
+
 ## Project Structure
 
 - `Flask - Graph Database/research/graph_images/alice_graph.png`: Relational Graph Database image.
@@ -15,6 +24,17 @@ This project implements a recommendation system using a relational graph databas
 - `Flask - Graph Database/templates/recommendation.html`: HTML template for the recommendation page.
 
 ## How to Run
+
+0. **Clone the Repo**:
+
+```
+git clone https://github.com/AtharvaPawar456/Recommendation-System-using-Relational-Database-Flask.git
+
+cd Recommendation-System-using-Relational-Database-Flask
+
+pip install -r requirements.txt
+
+```
 
 1. **Store Data**: Run `store_db.py` to convert JSON data to relational data and store it in `clientsdb.rdf`.
 
